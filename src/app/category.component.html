@@ -1,0 +1,9 @@
+<div *ngIf="category">
+    <h1>{{category.name}}</h1>
+    <img *ngFor="let card of category.cards" [src]="card">
+</div>
+
+<div *ngIf="!category">
+    <h1>{{pageName}}</h1>
+    <h2>No Match Found</h2>
+</div>
